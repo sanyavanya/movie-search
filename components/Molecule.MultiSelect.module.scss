@@ -1,0 +1,55 @@
+.inputWrapper {
+  position: relative;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.input {
+  padding: 0.5rem 1rem;
+  border: $border-width solid transparent;
+  border-radius: 5px;
+  background-color: $color-background-dark-transparent;
+  color: $color-text-primary;
+  width: 100%;
+  text-overflow: ellipsis;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.triangle {
+  @include transition-cubic-bezier-100;
+
+  font-size: 10px;
+  color: $color-text-tertiary;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-100%, -50%);
+
+  &Open {
+    transform: translate(-100%, -50%) rotateX(180deg);
+  }
+}
+
+.options {
+  border-radius: 5px;
+  background-color: $color-background-dark-transparent;
+  padding: 0.25rem 1rem;
+  display: none;
+
+  &Open {
+    display: block;
+  }
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  color: $color-text-primary;
+  font-size: 12px;
+  margin: 0.25rem;
+}

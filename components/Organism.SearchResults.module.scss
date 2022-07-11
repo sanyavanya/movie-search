@@ -1,0 +1,22 @@
+.container {
+  padding: 0.5rem 2rem 2.5rem;
+  margin: 0.5rem 0;
+  background-color: $color-background-dark;
+}
+
+.count {
+  font-size: 20px;
+  margin-bottom: 2rem;
+  color: $color-text-primary;
+}
+
+.filterSort {
+  position: relative;
+  border-bottom: $border-width solid $color-background-dark-medium;
+  display: flex;
+  justify-content: space-between;
+}
+
+.data {
+  padding-top: 2rem;
+}

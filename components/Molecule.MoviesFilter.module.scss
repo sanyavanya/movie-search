@@ -1,0 +1,30 @@
+.container {
+  position: relative;
+  top: $border-width;
+  padding-inline-start: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  margin-right: 2rem;
+  flex-wrap: wrap;
+}
+
+.item {
+  @include transition-cubic-bezier-100;
+
+  user-select: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  padding: 1rem;
+  color: $color-text-primary;
+  border: $border-width solid transparent;
+
+  &--active {
+    border: $border-width solid $color-accent;
+  }
+
+  &:hover {
+    cursor: pointer;
+    color: $color-text-secondary;
+  }
+}

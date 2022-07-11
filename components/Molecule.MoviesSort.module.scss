@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+}
+
+.label {
+  margin: 0.5rem 0;
+  padding: 0.5rem 0;
+  color: $color-text-tertiary;
+  white-space: nowrap;
+}
+
+.select {
+  @include transition-cubic-bezier-100;
+
+  color: $color-text-primary;
+  background-color: transparent;
+  font-weight: 400;
+  margin: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-family: Montserrat, serif;
+  font-size: 16px;
+
+  &:focus {
+    outline-width: 0;
+  }
+
+  &:hover {
+    cursor: pointer;
+    color: $color-text-secondary;
+  }
+}

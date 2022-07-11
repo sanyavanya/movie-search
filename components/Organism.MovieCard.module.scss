@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &:hover {
+    cursor: pointer;
+
+    .options {
+      opacity: 1;
+    }
+  }
+}
+
+.options {
+  opacity: 0;
+}
+
+.topLine {
+  align-items: start;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: 18px;
+  color: $color-text-secondary;
+}
+
+.genres {
+  font-size: 14px;
+  color: $color-text-tertiary;
+}
+
+.year {
+  font-size: 14px;
+  color: $color-text-secondary;
+  border: 1px solid $color-text-secondary;
+  border-radius: 5px;
+  padding: 0.25rem 1rem;
+}

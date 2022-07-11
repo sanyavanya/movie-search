@@ -1,0 +1,11 @@
+.textarea {
+  padding: 0.5rem 1rem;
+  border: $border-width solid transparent;
+  border-radius: 5px;
+  background-color: $color-background-dark-transparent;
+  color: $color-text-primary;
+
+  &:focus {
+    outline-width: 0;
+  }
+}

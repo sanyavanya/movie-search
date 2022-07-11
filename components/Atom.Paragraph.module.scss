@@ -1,0 +1,16 @@
+.paragraph {
+  margin: 0.5rem;
+  color: $color-text-primary;
+
+  &--primary {
+    color: $color-text-primary;
+  }
+
+  &--secondary {
+    color: $color-text-secondary;
+  }
+
+  &--tertiary {
+    color: $color-text-tertiary;
+  }
+}
