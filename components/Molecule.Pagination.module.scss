@@ -1,0 +1,11 @@
+.container {
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}

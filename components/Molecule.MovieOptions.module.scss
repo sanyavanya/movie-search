@@ -1,0 +1,42 @@
+.openButton {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.menu {
+  background-color: $color-background-dark-medium;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.closeButton {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.list {
+  padding-inline-start: 0;
+  margin: 0;
+  list-style-type: none;
+  padding: 0 0 0.5rem;
+}
+
+.listItem {
+  color: $color-text-primary;
+  padding: 0.5rem 1rem;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $color-accent;
+  }
+}

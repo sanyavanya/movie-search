@@ -1,0 +1,57 @@
+.button {
+  font-weight: 500;
+  margin: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  border: $border-width solid $color-accent;
+  border-radius: 5px;
+  user-select: none;
+  @include transition-cubic-bezier-75;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  &--disabled {
+    background-color: $color-background-dark-medium !important;
+    border: $border-width solid $color-background-dark-medium;
+
+    &:hover {
+      cursor: default;
+      transform: none;
+    }
+  }
+
+  &--primary {
+    background-color: $color-accent;
+    color: $color-text-primary;
+  }
+
+  &--secondary {
+    background-color: transparent;
+    color: $color-accent;
+  }
+
+  &--special {
+    font-weight: 600;
+    border-color: transparent;
+    background-color: $color-background-dark-transparent;
+    color: $color-accent;
+  }
+
+  &--icon {
+    color: $color-text-primary;
+    border: none;
+    font-size: 24px;
+    line-height: 16px;
+    padding: 0;
+    background-color: $color-background-dark-medium;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+  }
+}

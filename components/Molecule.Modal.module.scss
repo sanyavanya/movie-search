@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-background-black-transparent;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.modal {
+  max-width: $max-width-2;
+  background-color: $color-background-dark;
+  position: relative;
+}
+
+.closeButton {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+
+.heading {
+  padding: 0 2rem;
+}
+
+.content {
+  padding: 1rem 2rem;
+}
+
+.footer {
+  padding: 0 2rem 2rem;
+  text-align: right;
+}

@@ -1,0 +1,41 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 3rem;
+}
+
+.info {
+  grid-column: 2/4;
+}
+
+.title {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.rating {
+  margin: 0 1rem;
+  border: $border-width solid $color-text-primary;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+}
+
+.genres {
+  margin: 0 0.5rem;
+  color: $color-text-tertiary;
+}
+
+.yearAndDuration {
+  margin: 1rem 0.5rem;
+  color: $color-accent;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 2rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
